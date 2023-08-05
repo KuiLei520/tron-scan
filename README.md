@@ -1,5 +1,14 @@
 # tron-scan
 
+Tron_Scan.jar 是封装好的Tron扫块SDK。
+
+基于 HTTP API 对区块号进行解析操作。
+
+返回 区块号 的TRX转账以及标准的合约转账信息。
+
+方便了开发人员对TRX网络的开发。
+
+
 转账返回格式：
 
 contractRet：	成功 为 SUCCESS   失败 ...  忘了
