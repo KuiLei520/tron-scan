@@ -15,23 +15,15 @@ Tron_Scan.jar 是封装好的Tron扫块SDK。
 
 转账返回格式：
 
-contractRet：	成功 为 SUCCESS   失败 ...  忘了
-
-amount：	为 转账金额
-
-txID：	为 转账hash
-
-blockNum：	为 当前区块号
-
-to_address：	为 接收地址
-
-type：	TriggerSmartContract 为 合约转账、TransferContract 为 TRX 转账
-
-contract_address： 合约转账时 为 合约地址，TRX转账时为 空
-
-from_address：	为 发送地址
-
-timestamp：	为 时间戳
+* contractRet：	成功 为 SUCCESS   失败 ...  忘了
+* amount：	为 转账金额
+* txID：	为 转账hash
+* blockNum：	为 当前区块号
+* to_address：	为 接收地址
+* type：	TriggerSmartContract 为 合约转账、TransferContract 为 TRX 转账
+* contract_address： 合约转账时 为 合约地址，TRX转账时为 空
+* from_address：	为 发送地址
+* timestamp：	为 时间戳
 
 
 合约转账
