@@ -8,6 +8,7 @@ Tron_Scan.jar 是封装好的Tron扫块SDK。
 
 方便了开发人员对TRX网络的开发。
 
+#########################################################
 
 转账返回格式：
 
@@ -37,7 +38,7 @@ timestamp：	为 时间戳
 TRX转账
 		{"contractRet":"SUCCESS","amount":"0.000001","txID":"474d3ae8e1060ed381e7fd0c1cf6885825ee012fb453cea1b04d50994849aa27","blockNum":"53484028","to_address":"TCddPkvAjjh41wQ9tsamK5Hox93aReDtes","type":"TransferContract","contract_address":"","from_address":"THLsVCA3ra9XdSr4tJbEWGfCNbMtvWSMig","timestamp":"1691074442"}
 
-
+#########################################################
 
 Tron Scan Blocks V1.2.3  SDK
 
