@@ -1,5 +1,8 @@
 # tron-scan
 
+* 依赖 ：fastjson.jar我用的版本1.2.62。
+* 运行环境：JDK 1.8
+
 Tron_Scan.jar 是封装好的Tron扫块SDK。
 
 基于 HTTP API 对区块号进行解析操作。
