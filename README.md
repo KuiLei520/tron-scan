@@ -27,11 +27,11 @@ Tron_Scan.jar 是封装好的Tron扫块SDK。
 
 
 合约转账
-		{"contractRet":"SUCCESS","amount":"500.000000","txID":"4636f1434504d9f13dc55d7ccfb829ebee088fb48c074c4f66080bf9dca9d0d7","blockNum":"53483427","to_address":"TU3JJVA4Nhx1pvV1qcC6HK9UmRwrg56LtB","type":"TriggerSmartContract","contract_address":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","from_address":"TY4vaK2iVCkivohAHLi8pAF3Lup72P2rg2","timestamp":"1691072630"}
+		{"contractRet":"SUCCESS","amount":"500000000","txID":"4636f1434504d9f13dc55d7ccfb829ebee088fb48c074c4f66080bf9dca9d0d7","blockNum":"53483427","to_address":"TU3JJVA4Nhx1pvV1qcC6HK9UmRwrg56LtB","type":"TriggerSmartContract","contract_address":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","from_address":"TY4vaK2iVCkivohAHLi8pAF3Lup72P2rg2","timestamp":"1691072630"}
 
 
 TRX转账
-		{"contractRet":"SUCCESS","amount":"0.000001","txID":"474d3ae8e1060ed381e7fd0c1cf6885825ee012fb453cea1b04d50994849aa27","blockNum":"53484028","to_address":"TCddPkvAjjh41wQ9tsamK5Hox93aReDtes","type":"TransferContract","contract_address":"","from_address":"THLsVCA3ra9XdSr4tJbEWGfCNbMtvWSMig","timestamp":"1691074442"}
+		{"contractRet":"SUCCESS","amount":"1","txID":"474d3ae8e1060ed381e7fd0c1cf6885825ee012fb453cea1b04d50994849aa27","blockNum":"53484028","to_address":"TCddPkvAjjh41wQ9tsamK5Hox93aReDtes","type":"TransferContract","contract_address":"","from_address":"THLsVCA3ra9XdSr4tJbEWGfCNbMtvWSMig","timestamp":"1691074442"}
 
 #########################################################
 
