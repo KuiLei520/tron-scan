@@ -62,37 +62,37 @@ public class main {
 			
 			合约转账
 			
-			{"contractRet":"SUCCESS","amount":"500.000000","txID":"4636f1434504d9f13dc55d7ccfb829ebee088fb48c074c4f66080bf9dca9d0d7","blockNum":"53483427","to_address":"TU3JJVA4Nhx1pvV1qcC6HK9UmRwrg56LtB","type":"TriggerSmartContract","contract_address":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","from_address":"TY4vaK2iVCkivohAHLi8pAF3Lup72P2rg2","timestamp":"1691072630"}
+			{"contractRet":"SUCCESS","amount":"500000000","txID":"4636f1434504d9f13dc55d7ccfb829ebee088fb48c074c4f66080bf9dca9d0d7","blockNum":"53483427","to_address":"TU3JJVA4Nhx1pvV1qcC6HK9UmRwrg56LtB","type":"TriggerSmartContract","contract_address":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","from_address":"TY4vaK2iVCkivohAHLi8pAF3Lup72P2rg2","timestamp":"1691072630"}
     		
 			
 			
 			TRX转账
 			
-			{"contractRet":"SUCCESS","amount":"0.000001","txID":"474d3ae8e1060ed381e7fd0c1cf6885825ee012fb453cea1b04d50994849aa27","blockNum":"53484028","to_address":"TCddPkvAjjh41wQ9tsamK5Hox93aReDtes","type":"TransferContract","contract_address":"","from_address":"THLsVCA3ra9XdSr4tJbEWGfCNbMtvWSMig","timestamp":"1691074442"}
+			{"contractRet":"SUCCESS","amount":"1","txID":"474d3ae8e1060ed381e7fd0c1cf6885825ee012fb453cea1b04d50994849aa27","blockNum":"53484028","to_address":"TCddPkvAjjh41wQ9tsamK5Hox93aReDtes","type":"TransferContract","contract_address":"","from_address":"THLsVCA3ra9XdSr4tJbEWGfCNbMtvWSMig","timestamp":"1691074442"}
 			
 			*/
         		if(transfer.getString("contractRet").equals("SUCCESS")) {
         			
         			if(transfer.getString("type").equals("TriggerSmartContract") && transfer.getString("contract_address").equals("TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t")) {
                         
-						// 这个地方要使用 BigDecimal 进行计算
+					// 这个地方要使用 BigDecimal 进行计算
 						
-						BigDecimal amount_a = new BigDecimal(transfer.getString("amount"));
-                        BigDecimal divisor = new BigDecimal("1000000");
-                        String amount = amount_a.divide(divisor, 6, BigDecimal.ROUND_HALF_UP).toString();
+					BigDecimal amount_a = new BigDecimal(transfer.getString("amount"));
+                        		BigDecimal divisor = new BigDecimal("1000000");
+                        		String amount = amount_a.divide(divisor, 6, BigDecimal.ROUND_HALF_UP).toString();
         				System.out.println("USDT transfer:"+transfer.getString("from_address") + " -> " + transfer.getString("to_address") + " -> " + amount + " -> " + transfer.getString("txID"));
         				
         			}else if(transfer.getString("type").equals("TransferContract")) {
 						
-						// 这个地方要使用 BigDecimal 进行计算
+					// 这个地方要使用 BigDecimal 进行计算
                         
-						BigDecimal amount_a = new BigDecimal(transfer.getString("amount"));
+					BigDecimal amount_a = new BigDecimal(transfer.getString("amount"));
 						
-						// trx 和 usdt 一样 是 10 ** 6
-                        BigDecimal divisor = new BigDecimal("1000000");
+					// trx 和 usdt 一样 是 10 ** 6
+                        		BigDecimal divisor = new BigDecimal("1000000");
 						
-						// 这个地方的 6 是保留小数点 后 六位的意思
-                        String amount = amount_a.divide(divisor, 6, BigDecimal.ROUND_HALF_UP).toString();
+					// 这个地方的 6 是保留小数点 后 六位的意思
+                        		String amount = amount_a.divide(divisor, 6, BigDecimal.ROUND_HALF_UP).toString();
         				System.out.println("TRX transfer:"+transfer.getString("from_address") + " -> " + transfer.getString("to_address") + " -> " + amount + " -> " + transfer.getString("txID"));
         				
         			}
