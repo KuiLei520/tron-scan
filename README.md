@@ -35,7 +35,7 @@ TRX转账
 
 #########################################################
 
-Tron Scan Blocks V1.2.4  SDK
+Tron Scan Blocks V1.2.5  SDK
 
 1.本SDK自带自动切换节点。不怕因网络等问题造成的卡块。
 
@@ -48,3 +48,4 @@ Tron Scan Blocks V1.2.4  SDK
 *  修复一个已知问题：区块有可能没交易。
 *  优化节点切换，由 毫秒 级修改为 秒 级。
 *  修复一个因原始数据解码错误。例：c82365fdc6fc16fbc76f4aa4effa45cd312a7b12dc9c88047022c0468462b9df
+*  修改 amount 显示方式，因无法统一代币长度，改由调用端进行 BigDecimal.divide 运算。
